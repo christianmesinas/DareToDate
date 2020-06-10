@@ -521,7 +521,9 @@ section {
   background-color: #F7F7F7 !important;
 }
 .card-deck{
-  margin-right: 0px!important:
+  margin-right: 0px!important;
+  margin-left: 0px!important;
+
 }
 .card-title{
   margin-right: 0% !important;
