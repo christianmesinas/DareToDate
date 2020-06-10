@@ -353,7 +353,7 @@ a:hover {
 #hero {
   width: 100%;
   height: 90vh;
-  background:url("C:/Users/Guzma/web development/daretodate/images/images/iStock-916475400.jpg");
+  background:url("../../images/iStock-916475400.jpg");
   background-size: cover;
   position: relative;
   background-attachment: fixed;
