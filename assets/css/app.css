@@ -408,20 +408,21 @@ a:hover {
   font-weight: 10;
   line-height: 56px;
   color: #fff;
+  letter-spacing: 0.5rem;
+  padding-top: 80px;
 }
 
 #hero h2 {
   color: #eee;
   margin-bottom: 40px;
   font-size: 26px;
-  font-weight: 200
+  font-weight: 100;
+  letter-spacing: 0.1em;
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 30px 9px 30px;
@@ -433,11 +434,37 @@ a:hover {
 #hero .hero-container .button-box a{
   background:linear-gradient(to bottom, #01add3 5%, #6dd5ed 100%);
 	background-color:#01add3;
+  text-shadow: none;
 }
 
 #hero .btn-get-started:hover {
-  background: #699cdcc9;
-  border: 2px solid #699cdcc9;
+  background-color: #06afd4;
+  text-decoration: none;
+}
+#hero .btn-get-started:after {
+  background-color: #06afd4;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+  border-radius: 5px;
+
+}
+#hero .btn-get-started:after {
+  transform: translate(0, 0);
+}
+#hero .btn-get-started:hover {
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
 }
 
 
