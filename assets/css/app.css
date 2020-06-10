@@ -89,6 +89,12 @@ a:hover {
     font-size: 28px;
   }
 }
+@media (max-width: 768px) {
+  #header.header-scrolled, #header.header-inner-pages {
+    height: 5%;
+
+}
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
