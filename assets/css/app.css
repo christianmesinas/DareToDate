@@ -77,7 +77,7 @@ a:hover {
   background-color: #01add3;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
-  height: 18%;
+  height: 10%;
 }
 
 #header.header-scrolled .logo a, #header.header-inner-pages .logo a {
