@@ -700,7 +700,51 @@ section {
 .services .icon-box:hover .icon i {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# Evenementen
+--------------------------------------------------------------*/
+.jumbotron{
+  background-color: #ffff !important;
+margin-top: -50px;
+}
+.display-4 , .lead{
+  color: #27bbdd;
+}
+.Arrow{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  float: right;
+}
+@media (min-width: 1024px) {
+  .Arrow {
+    float: none;
+    padding-right: 800px;
+  }
+}
+/*--------------------------------------------------------------
+# search events
+--------------------------------------------------------------*/
+.search{
+  display: inline;
+}
+#searchContainer{
+  margin-left: 12%;
+  margin-top: -125px;
+}
+@media (min-width: 768px) {
+  #searchContainer {
+    margin-top: -215px;
+    margin-left: 5%;
 
+  }
+}
+@media (min-width: 1024px) {
+  #searchContainer {
+    margin-top: -215px;
+    margin-left: 12%;
+
+  }
+}
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
