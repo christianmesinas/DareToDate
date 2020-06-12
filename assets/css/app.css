@@ -857,6 +857,17 @@ margin-top: -50px;
   padding-left: 20px;
   padding-right: 20px;
 }
+.more-results{
+  color: #01add3;
+}
+.more-results:hover{
+text-decoration: underline;
+color: #01add3;
+cursor: pointer;
+}
+.center{
+  text-align: center;
+}
 
 @media (min-width: 375px) {
   .center-results{
@@ -872,99 +883,77 @@ margin-top: -50px;
 }
 @media (min-width: 1000px) {
   .center-results{
-    padding-left: 0%
+    padding-left: 7.5%
   }
 
 }
 @media (min-width: 1200px) {
   .center-results{
     padding-left: 10%
+    color: #01add3;
+
   }
 
 }
 /*--------------------------------------------------------------
-# Features
+# as seen on
 --------------------------------------------------------------*/
-.features {
-  padding-top: 0;
+#as-seen-on{
+  height: 300px;
+  width: 100%;
+  background-color: #F7F7F7;
+}
+#as-seen-on h2{
+ color: #01add3;
+}
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+  bottom: -40px;
+
 }
 
-.features .icon-box {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  transition: ease-in-out 0.3s;
-  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+.flair, .humo{
+  display: none;
 }
-
-.features .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
+@media (min-width: 768px) {
+  .flair, .humo{
+    display: inline;
+  }
+  .flairm, .humom{
+    display: none;
+  }
 }
-
-.features .icon-box h3 {
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 16px;
-}
-
-.features .icon-box h3 a {
-  color: #493c3e;
-  transition: ease-in-out 0.3s;
-}
-
-.features .icon-box:hover a {
-  color: #e43c5c;
-}
-
-/*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-.cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
-  background-size: cover;
-  padding: 60px 0;
-}
-
-.cta h3 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta p {
-  color: #fff;
-}
-
-.cta .cta-btn {
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.cta .cta-btn:hover {
-  background: #e43c5c;
-  border: 2px solid #e43c5c;
-}
-
-@media (min-width: 1024px) {
-  .cta {
-    background-attachment: fixed;
+@media (min-width: 900px) {
+  #as-seen-on{
+    height: 400px;
+    width: 100%;
+    background-color: #F7F7F7;
   }
 }
 
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    height: 0px;
+    width: 22px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.line{
+    width: 80%;
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+    margin-left: 10%;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
