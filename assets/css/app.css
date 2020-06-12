@@ -89,6 +89,13 @@ a:hover {
     font-size: 28px;
   }
 }
+@media (min-width: 992px) {
+  #header.header-scrolled, #header.header-inner-pages {
+    height: 8%;
+
+  }
+
+}
 
 
 /*--------------------------------------------------------------
@@ -853,7 +860,7 @@ margin-top: -50px;
 
 @media (min-width: 375px) {
   .center-results{
-    margin-left: 10%
+    padding-left: 10%
   }
 
 }
@@ -865,13 +872,13 @@ margin-top: -50px;
 }
 @media (min-width: 1000px) {
   .center-results{
-    margin-left: 7%
+    padding-left: 0%
   }
 
 }
 @media (min-width: 1200px) {
   .center-results{
-    margin-left: 18%
+    padding-left: 10%
   }
 
 }
