@@ -211,7 +211,11 @@ text-transform: capitalize;
 .header-scrolled .nav-menu > ul > li > a, .header-inner-pages .nav-menu > ul > li > a {
   color: #ffffff;
 }
-
+@media (max-width: 990px) {
+.d-mobile{
+  display: none;
+}
+}
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
@@ -961,13 +965,9 @@ background: #707070;
 }
 
  .wrapper {
-
-	 width: 320px;
-	 height: 500px;
-	 background: #fdfeff;
+	 width: 70px;
+	 height: 250px;
 	 border-radius: 10px;
-	 padding: 20px 20px 20px 20px;
-	 box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
 }
  .wrapper .profile {
 	 position: relative;
