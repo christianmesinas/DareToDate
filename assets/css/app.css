@@ -577,8 +577,8 @@ section {
   text-align: center;
 }
 .icons{
-  width: 10% !important;
-  margin-left: 50%;
+  width: 20% !important;
+  margin-left: 45%;
 }
 
 /*--------------------------------------------------------------
@@ -597,8 +597,6 @@ margin-top: -50px;
 
 .Arrow{
   margin-top: 5%;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 .border{
   display: block;
@@ -611,7 +609,7 @@ margin-top: -50px;
 @media (min-width: 768px) {
   .Arrow {
     margin-top:-2%;
-    margin-left: 6%;
+    margin-left: -5%;
   }
 }
 /*--------------------------------------------------------------
@@ -1013,6 +1011,14 @@ background-color: #F7F7F7;
  .payment {
 	 margin-top: 12px;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
  .subscribe-btn {
 	 float: left;
 	 margin-right: 4%;
@@ -1035,6 +1041,10 @@ background-color: #F7F7F7;
  .subscribe-btn i {
 	 margin-left: 8px;
 }
+/*@media (max-width: 575px) {
+  .form input{
+width: 45%
+ }*/
 /*--------------------------------------------------------------
 # giftcard
 --------------------------------------------------------------*/
