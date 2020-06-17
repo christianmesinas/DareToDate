@@ -363,7 +363,7 @@ text-transform: capitalize;
 /*--------------------------------------------------------------
 # navigation other pages
 --------------------------------------------------------------*/
-.header-events{
+.header-pages{
   background: linear-gradient(to bottom, #01add3 5%, #6dd5ed 100%);
 }
 /*--------------------------------------------------------------
@@ -644,11 +644,15 @@ margin-top: -50px;
 #searchContainer{
   margin-top: -125px;
 }
+@media (min-width: 475px) and (max-width: 1000px) {
+  .padding-drop{
+    left: 5%;
 
+}
+}
 @media (min-width: 475px) {
   .padding-drop{
     display: inline-flex;
-    left: 5%;
 
 }
 }
@@ -659,6 +663,18 @@ margin-top: -50px;
 
   }
 
+}
+@media (min-width: 1000px) {
+  .padding-drop{
+    left: 0%;
+
+}
+}
+@media (min-width: 1335px) {
+  .padding-drop{
+    left: 5%;
+
+}
 }
 /*--------------------------------------------------------------
 # search results
@@ -932,6 +948,7 @@ background: #707070;
   .height-testimonials{
     height: 500px;
   }
+
 /*--------------------------------------------------------------
 # subscribe
 --------------------------------------------------------------*/
@@ -1210,335 +1227,78 @@ color: grey;
   .footer-image{
 width: 100%;
  }
-
-
-}
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-.faq {
-  padding: 60px 0;
 }
 
-.faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li {
-  padding: 0 0 20px 25px;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: #e43c5c;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.faq .faq-list i {
-  font-size: 18px;
-  position: absolute;
-  left: -25px;
-  top: 6px;
-}
-
-.faq .faq-list p {
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.faq .faq-list a.collapse {
-  color: #e43c5c;
-}
-
-.faq .faq-list a.collapsed {
-  color: #343a40;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #e43c5c;
-}
-
-.faq .faq-list a.collapsed i::before {
-  content: "\eab2" !important;
-}
-
-@media (min-width: 1280px) {
-  .faq .container {
-    padding: 0 120px;
-  }
-}
 
 /*--------------------------------------------------------------
-# Team
+# event page
 --------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
+
+.far, .fas{
+  color: lightblue;
+}
+ .card h2 {
+	 margin: 0;
+	 padding: 0 1rem;
+}
+ .card .title {
+	 padding: 1rem;
+	 color: blue;
+	 font-weight: bold;
+	 font-size: 32px;
+}
+ .card .desc {
+	 padding: 0.5rem 0.5rem;
+	 font-size: 16px;
+}
+ .card .actions {
+	 display: grid;
+	 grid-template-columns: repeat(3, 1fr);
+	 align-items: center;
+	 padding: 0.5rem 1rem;
+}
+ .card svg {
+	 width: 85px;
+	 height: 85px;
+	 margin: 0 auto;
+}
+.icon-span{
   text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
 }
-
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #493c3e;
-  margin: 0 10px;
-  padding-top: 8px;
-  display: inline-block;
-}
-
-.team .member .social a:hover {
-  color: #e43c5c;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #493c3e;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.team .member:hover .social {
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info {
+.inline-icons{
+  padding: 10px;
   width: 100%;
-  background: #fff;
-}
-
-.contact .info i {
-  font-size: 20px;
-  color: #e43c5c;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #fdeff2;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+}
+ .card-text {
+	 display: grid;
+	 grid-template-columns: 1fr 2fr;
+}
+ .title-total {
+	 padding: 2.5em 1.5em 1.5em 1.5em;
 }
 
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #493c3e;
+ .img-portada {
+	 width: 100%;
 }
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #816a6e;
+ .portada {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 10px;
+	 background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/happy-couple-having-date-and-eating-ice-cream-royalty-free-image-871628888-1553264922.jpg?crop=1.00xw:0.753xh;0,0.0727xh&resize=480:*");
+	 background-position: bottom center;
+	 background-size: cover;
 }
-
-.contact .info .email, .contact .info .phone {
-  margin-top: 40px;
-}
-
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #e43c5c;
-  color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #e43c5c;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: #e43c5c;
-  border: 0;
-  padding: 10px 28px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #d01d3f;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #f6f4f4;
-  margin-top: 67px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 50px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #655356;
-  content: "/";
+ button {
+	 border: none;
+	 background: none;
+	 font-size: 24px;
+	 color: #8bc34a;
+	 cursor: pointer;
+	 transition: 0.5s;
 }
 
 /*--------------------------------------------------------------
