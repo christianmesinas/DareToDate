@@ -360,7 +360,12 @@ text-transform: capitalize;
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
-
+/*--------------------------------------------------------------
+# navigation other pages
+--------------------------------------------------------------*/
+.header-events{
+  background: linear-gradient(to bottom, #01add3 5%, #6dd5ed 100%);
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1041,10 +1046,7 @@ input[type=number]::-webkit-outer-spin-button {
  .subscribe-btn i {
 	 margin-left: 8px;
 }
-/*@media (max-width: 575px) {
-  .form input{
-width: 45%
- }*/
+
 /*--------------------------------------------------------------
 # giftcard
 --------------------------------------------------------------*/
