@@ -422,7 +422,7 @@ text-transform: capitalize;
   border-radius: 50px;
 }
 
-#hero h1 {
+.image-text-header {
   margin: 0 0 10px 0;
   font-size: 65px;
   font-weight: 10;
@@ -430,6 +430,7 @@ text-transform: capitalize;
   color: #fff;
   letter-spacing: 0.2rem;
   padding-top: 150px ;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #hero h2 {
@@ -1233,9 +1234,15 @@ width: 100%;
 /*--------------------------------------------------------------
 # event page
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
-
+#event-image{
+ background-image: url('../../images/iStock-1150761834.jpg');
+ height: 450px;
+ background-attachment: fixed;
+ background-position: top;
+ background-size: cover;
+ text-align: center;
+}
 .far, .fas{
   color: lightblue;
 }
@@ -1266,7 +1273,7 @@ width: 100%;
 }
 .icon-span{
   text-align: center;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 .inline-icons{
   padding: 10px;
@@ -1275,11 +1282,8 @@ width: 100%;
 }
  .events {
 	 display: grid;
-	 grid-template-columns: 1fr 2fr;
 }
-#event-card{
-  margin-top: 15%;
-}
+
 .dropdown-events{
   display: inline-block;
 }
@@ -1299,7 +1303,6 @@ width: 100%;
 	 background-size: cover;
 }
 
-#kortingInput{display:none;}
 
 .events-toggle{
   vertical-align: baseline !important;
@@ -1313,6 +1316,37 @@ width: 100%;
 	 cursor: pointer;
 	 transition: 0.5s;
 }
+@media (min-width: 768px) {
+.events{
+  grid-template-columns: 1fr 2fr;
+}
+}
+
+
+/*--------------------------------------------------------------
+# events details
+--------------------------------------------------------------*/
+.title {
+
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+
+}
+
+.btn {
+  margin-top: auto;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

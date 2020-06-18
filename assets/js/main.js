@@ -97,12 +97,26 @@
     $('#header').addClass('header-scrolled');
   }
 
-  // dropdown show value
+  // dropdown gender show value
   $("#genderDropdown li a").click(function(){
 
-    $(".events-toggle:first-child").html($(this).text()+' <span class="caret"></span>');
+    $(".events-toggle1:first-child").html($(this).text()+' <span class="caret"></span>');
 
   });
+  // dropdown age show value
+  $("#ageDropdown li a").click(function(){
+
+    $(".events-toggle2:first-child").html($(this).text()+' <span class="caret"></span>');
+
+  });
+
+  // if dropdown is selected add inputs for coupon
+  //$("#genderDropdown li a").each(function(){
+  //    var kortingInput = $(this).html();
+  //    addClass(kortingInput);
+//});
+
+
 
 
   // Back to top button
