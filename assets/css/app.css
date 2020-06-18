@@ -746,7 +746,7 @@ margin-top: -50px;
     padding-right: 5%;
   }
 .fa-venus{
-  color: lightpink;
+  color: lightpink !important;
 }
 .fa-mars{
   color: lightblue
@@ -798,7 +798,7 @@ cursor: pointer;
 }
 @media (min-width: 1000px) {
   .center-results{
-    padding-left: 7.5%
+    padding-left: 8.5%
   }
 
 }
@@ -1273,9 +1273,15 @@ width: 100%;
   width: 100%;
   display: flex;
 }
- .card-text {
+ .events {
 	 display: grid;
 	 grid-template-columns: 1fr 2fr;
+}
+#event-card{
+  margin-top: 15%;
+}
+.dropdown-events{
+  display: inline-block;
 }
  .title-total {
 	 padding: 2.5em 1.5em 1.5em 1.5em;
@@ -1288,9 +1294,16 @@ width: 100%;
 	 width: 100%;
 	 height: 100%;
 	 border-radius: 10px;
-	 background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/happy-couple-having-date-and-eating-ice-cream-royalty-free-image-871628888-1553264922.jpg?crop=1.00xw:0.753xh;0,0.0727xh&resize=480:*");
+	 background-image: url("../../images/iStock-488088826 (1).jpg");
 	 background-position: bottom center;
 	 background-size: cover;
+}
+
+#kortingInput{display:none;}
+
+.dropdown-toggle{
+  vertical-align: baseline !important;
+  border: none;
 }
  button {
 	 border: none;

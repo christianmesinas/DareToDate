@@ -96,6 +96,15 @@
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
+
+  // dropdown show value
+  $("#genderDropdown li a").click(function(){
+
+    $(".dropdown-toggle:first-child").html($(this).text()+' <span class="caret"></span>');
+
+  });
+
+
   // Back to top button
 //  $(window).scroll(function() {
 //    if ($(this).scrollTop() > 100) {

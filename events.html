@@ -35,7 +35,7 @@
 
     <a href="index.html" class="logo mr-auto"><img src=".\images\Artboard 1 kopie 8.png" alt="logo" class="img-fluid"></a>
 
-    <nav class="nav-menu d-mobile d-lg-block ">
+    <nav class="nav-menu d-mobile d-lg-block "><!-- .nav-menu -->
       <ul>
         <li class="active">
           <a href="index.html">HOME</a>
@@ -62,16 +62,17 @@
             </ul>
         </li>
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav><!-- end .nav-menu -->
   </div>
 
 </header>
-<section>
+<!-- begin event card-->
+<section id="event-card">
 
 <div class="container">
 
-<div class="card">
-  <div class="card-text">
+<div  class="card" >
+  <div class="card-text events">
     <div class="portada">
 
     </div>
@@ -89,21 +90,30 @@
        <p class="desc">Onze sympathieke host ontvangt jou met een big smile en zorgt ervoor dat je je meteen op je gemak voelt. We beginnen met een gezellige apero om het ijs te breken. Daarna leer je allemaal toppers (net zoals jijzelf) kennen via onze speeddate.</p>
         <p class="desc">Hierna blijft iedereen altijd lang gezellig napraten met een cocktail of wijntje. Schrijf je snel in en beleef een onvergetelijke avond in Mechelen!</p>
    <div class="gender">
-     <span> ik ben een
-     <div class="dropdown">
-   <a class="dropdown-toggle btn" data-toggle="dropdown" href="#" >Dropdown trigger</a>
-     <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-       <li><a>Item One</a></li>
-       <li><a>Item Two</a></li>
-     </ul>
- </div>
+     <span class="desc"> ik ben een
+
+     <div class="dropdown dropdown-events">
+
+   <a class="dropdown-toggle btn" data-toggle="dropdown" href="#" > geslacht <span class="caret"></span></a>
+
+     <ul id="genderDropdown" class="dropdown-menu" role="menu" aria-labelledby="GenderLabel">
+       <li><a class="gender-value-dropdown">Man</a></li>
+       <li><a class="gender-value-dropdown">Vrouw</a></li>
+      </ul>
+      <div id="kortingInput">
+       <p>kortingscode: <label id="kortinglabel"><input name="kortingscode" type="text" placeholder="kortingscode" size="25" /></label></p>
+   </div>
+   </div>
+<p><a href="#" class="btn btn-primary"> BOEKEN</a></p>
+
+ </span>
  </div>
 </div>
  </div>
-
    </div>
-
  </div>
+ <!-- end event card-->
+
 
 </section>
 
