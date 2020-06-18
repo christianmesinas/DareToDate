@@ -100,7 +100,7 @@
   // dropdown show value
   $("#genderDropdown li a").click(function(){
 
-    $(".dropdown-toggle:first-child").html($(this).text()+' <span class="caret"></span>');
+    $(".events-toggle:first-child").html($(this).text()+' <span class="caret"></span>');
 
   });
 
