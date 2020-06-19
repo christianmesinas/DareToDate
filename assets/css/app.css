@@ -1427,6 +1427,9 @@ justify-content: center;
 padding-left: 10%;
 width: 90%
 }
+#speeddate{
+  border-bottom: 2px dotted lightgrey;
+}
 
 @media  (max-width: 576px) {
   #whySpeeddate-image h2 {
