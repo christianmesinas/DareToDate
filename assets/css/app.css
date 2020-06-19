@@ -433,7 +433,7 @@ text-transform: capitalize;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#hero h2 {
+#hero h2, #whySpeeddate-image h2 {
   font-family: arial;
   padding-top: 20px;
   color: #eee;
@@ -1331,23 +1331,90 @@ width: 100%;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-
+.photos-events-title{
+  padding-top: 10%;
+  text-align:center;
+}
+.d-block{
+  padding-top: 30%;
+}
 .card-block {
     font-size: 1em;
     position: relative;
     margin: 0;
     padding: 1em;
     border: none;
-    border-top: 1px solid rgba(34, 36, 38, .1);
     box-shadow: none;
+    top: 15%
+}
+
+.profile-card-1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height:368px;
+}
+.list-group-item{
+  background-color: #f7f7f7 ;
+  border: none;
 
 }
+
+.profile-card-1 .card-content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.profile-card-1 .profile {
+  top: 15%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 85px;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.profile-card-1 h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:16px;
+  color: black;
+}
+.profile-card-1 h2 small {
+  display: block;
+  font-size: 16px;
+  margin-top:10px;
+}
+
 
 .btn {
   margin-top: auto;
 }
 
+/*--------------------------------------------------------------
+# waarom Speeddate page
+--------------------------------------------------------------*/
+#whySpeeddate-image{
+  background-image: url('../../images/iStock-488088898.jpg');
+  height: 450px;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+}
+#whySpeeddate-image h2 {
+padding-left: 10%;
+width: 90%
+}
 
+@media  (max-width: 576px) {
+  #whySpeeddate-image h2 {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

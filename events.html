@@ -40,14 +40,13 @@
         <li class="active">
           <a href="index.html">HOME</a>
         </li>
-        <li class="nav-link drop-down" data-toggle="dropdown"><a href="">INFO</a>
+        <li class="nav-link drop-down" ><a data-toggle="dropdown">INFO</a>
           <ul>
-            <li><a href="#">WAAROM SPEEDDATE?</a></li>
+            <li><a href="waaromSpeeddate.html">WAAROM SPEEDDATE?</a></li>
             <li><a href="#">OVER ONS</a></li>
             <li><a href="#">VEELGESTELDE VRAGEN</a></li>
             <li><a href="#">CAREERS</a></li>
             <li><a href="#">PARTNER WITH US</a></li>
-            <li><a href="#">BLOG</a></li>
           </ul>
         </li>
         <li><a href="events.html">EVENEMENTEN</a></li>
@@ -128,7 +127,7 @@
 </span>
  </div>
  <div class="kortingInput">
-    <p>kortingscode: <label id="kortinglabel"><input name="kortingscode" type="text" placeholder="kortingscode" size="25" /></label></p>
+    <p><label id="kortinglabel"><input name="kortingscode" type="text" placeholder="kortingscode" size="25" /></label></p>
 </div>
 </div>
  </div>
@@ -143,28 +142,31 @@
   <!-- Card Start -->
   <div class="card">
     <div class="row ">
+
       <div class="col-md-2">
-      </div>
+    		    <div class="card profile-card-1">
+    		        <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="profile-image" class="profile"/>
+                    <div class="card-content">
+                    <h2>Nathalie<small>Host</small></h2>
+                    </div>
+                </div>
+    		</div>
 
       <div class="col-md-5 px-3">
         <div class="card-block px-6">
-          <h4 class="card-title">Horizontal Card with Carousel - Bootstrap 4 </h4>
-          <p class="card-text">
-            The Carousel code can be replaced with an img src, no problem. The added CSS brings shadow to the card and some adjustments to the prev/next buttons and the indicators is rounded now. As in Bootstrap 3
-          </p>
-          <p class="card-text">Made for usage, commonly searched for. Fork, like and use it. Just move the carousel div above the col containing the text for left alignment of images</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Start: 19.00</li>
+            <li class="list-group-item">Einde: 23.00</li>
+            <li class="list-group-item"><i class="fa fa-envelope" aria-hidden="true"></i> info@daretodate.eu</li>
+            <li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i> 02 400 77 84</li>
+            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Bar Zar (Pourbusstraat 100, 2000 Antwerpen)</li>
+          </ul>
           <br>
         </div>
       </div>
       <!-- Carousel start -->
       <div class="col-md-5">
         <div id="CarouselTest" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#CarouselTest" data-slide-to="0" class="active"></li>
-            <li data-target="#CarouselTest" data-slide-to="1"></li>
-            <li data-target="#CarouselTest" data-slide-to="2"></li>
-
-          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
@@ -183,25 +185,34 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+
+  <h4 class="photos-events-title">Sfeerfoto's</h4>
           </div>
         </div>
       </div>
       <!-- End of carousel -->
     </div>
   </div>
+  </section>
   <!-- End of card -->
 
-</div>
+  <!-- begin footer Section -->
+  <footer>
+  <div class="image-position">
+
+    <img src="https://c.wallhere.com/photos/47/f0/light_night_city_river_shore-1058590.jpg!d" class="img-fluid footer-image" alt="Responsive image">
 
 
- <br>
-<br>
 
 
-</section>
+  </div>
 
-<script src="assets/js/main.js"></script>
 
+  </footer>
+
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
