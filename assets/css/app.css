@@ -604,6 +604,7 @@ section {
 margin-top: -50px;
 }
 .display-4 , .lead{
+  width: 60%;
   text-align: left;
 }
 
@@ -620,8 +621,8 @@ margin-top: -50px;
 
 @media (min-width: 768px) {
   .Arrow {
-    margin-top:-2%;
-    margin-left: 55%;
+    margin-top:-5%;
+    margin-left: 50%;
     position: absolute;
   }
 }
@@ -675,12 +676,13 @@ margin-top: -50px;
 @media (min-width: 1000px) {
   .padding-drop{
     left: 0%;
+    margin-top: 25px;
 
 }
 }
 @media (min-width: 1335px) {
   .padding-drop{
-    left: 5%;
+    left: 3%;
 
 }
 }
@@ -739,7 +741,7 @@ margin-top: -50px;
 }
 .card-body{
   font-size: larger;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-right: 10%;
   padding-left: 10%;
 }
@@ -828,7 +830,8 @@ cursor: pointer;
 
 @media (min-width: 1000px) {
   .center-results{
-    padding-left: 2%
+    padding-left: 1%;
+    padding-right: 0px;
   }
 
 }
