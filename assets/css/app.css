@@ -653,6 +653,9 @@ margin-top: -50px;
 #searchContainer{
   margin-top: -125px;
 }
+.margin-events{
+  margin-bottom: 50px;
+}
 @media (min-width: 475px) and (max-width: 1000px) {
   .padding-drop{
     left: 5%;
