@@ -1127,6 +1127,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 25px;
 }
 .padding-giftcard{
+  padding-top: 10%;
   padding-left: 15px;
   padding-right: 15px;
 }
