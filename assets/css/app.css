@@ -268,7 +268,7 @@ text-transform: capitalize;
 }
 
 .mobile-nav-toggle i {
-  color: #068ede;
+  color: #ffffff;
 }
 
 .mobile-nav {
@@ -561,8 +561,10 @@ section {
 # Services section
 --------------------------------------------------------------*/
 #symbols{
+  padding-top: 0px;
   padding-right: 10px;
   background-color: #F7F7F7;
+  padding-bottom: 0px;
 }
 .card{
   border: none !important;
@@ -577,21 +579,25 @@ section {
   margin-right: 0% !important;
   margin-left: 10%;
   text-align: center;
+  font-weight: 600;
 }
 .card-paragraph{
+  font-family: calibri light;
   margin-left: 10%;
   text-align: center;
+  margin-top: -5px;
+  line-height: 18px;
+
 }
 .icons{
-  width: 20% !important;
-  margin-left: 45%;
+  width: 30% !important;
+  margin-left: 40%;
 }
 
 /*--------------------------------------------------------------
 # Evenementen
 --------------------------------------------------------------*/
 .event-title{
-  color: #01add3;
 }
 .jumbotron{
   background-color: #ffff !important;
@@ -615,7 +621,8 @@ margin-top: -50px;
 @media (min-width: 768px) {
   .Arrow {
     margin-top:-2%;
-    margin-left: -5%;
+    margin-left: 55%;
+    position: absolute;
   }
 }
 /*--------------------------------------------------------------
@@ -701,7 +708,7 @@ margin-top: -50px;
 	margin-left: 1px;
 	text-align: center;
 	width: 25px;
-	border-bottom: 2px solid #1584ec;
+	border-bottom: 2px solid #4ab7ec;
 }
 .date2{
   	font-size: 21px;
@@ -723,15 +730,21 @@ margin-top: -50px;
   display: inline-block;
   justify-content: space-between;
   border: 1px solid #e9e9e9 !important;
-  width: 18rem;
+  width: 21rem;
+  max-width: 1400px;
   margin-bottom: 10%;
   border-radius: 20px 20px 0px 0px;
  -moz-border-radius: 20px 20px 0px 0px;
  -webkit-border-radius: 20px 20px 0px 0px;
 }
 .card-body{
+  font-size: larger;
+  padding-top: 50px;
   padding-right: 10%;
   padding-left: 10%;
+}
+#carouselExampleIndicators{
+  padding-top:80px;
 }
 
 .age{
@@ -745,6 +758,7 @@ margin-top: -50px;
   .results-body{
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 3.5%;
   }
 .fa-venus{
   color: lightpink !important;
@@ -755,7 +769,9 @@ margin-top: -50px;
 .fa-user-plus{
   color: lightblue
 }
-
+.fa-euro-sign{
+  color: #29bcdc !important;
+}
 .btn-primary{
   float: right;
   background-color: transparent;
@@ -763,6 +779,7 @@ margin-top: -50px;
   padding-left: 5px;
   padding-right: 5px;
   border-color: #29bcdc;
+  margin-top: -5px !important;
 }
 .btn-primary:hover{
   background-color: #29bcdc;
@@ -770,6 +787,7 @@ margin-top: -50px;
   background-color: #01add3;
 }
 .results-title{
+  margin-top: 10px;
   text-align: left;
   margin-left: 0%;
 }
@@ -784,6 +802,14 @@ cursor: pointer;
 .center{
   text-align: center;
 }
+.fa-euro-sign{
+  color:
+}
+@media (max-width: 768px) {
+  #results .container .card{
+    width: 18rem;
+}
+}
 
 @media (min-width: 375px) {
   .center-results{
@@ -793,13 +819,16 @@ cursor: pointer;
 }
 @media (min-width: 768px) {
 #results .container .card{
-      margin-right: 1%
+      margin-right: 2%;
+      margin-bottom: 2%
   }
 
 }
+
+
 @media (min-width: 1000px) {
   .center-results{
-    padding-left: 8.5%
+    padding-left: 2%
   }
 
 }
@@ -894,8 +923,8 @@ background: #707070;
 
 
  .wrapper .profile .thumbnail {
-	 width: 124px;
-	 height: 124px;
+	 width: 160px;
+	 height: 160px;
 	 display: flex;
 	 margin-left: auto;
 	 margin-right: auto;
@@ -907,16 +936,15 @@ background: #707070;
 	 font-size: 24px;
 	 font-weight: 600;
 	 text-align: center;
+   margin-bottom: -5px;
 }
  .wrapper .profile .title {
+   padding-bottom: 15px;
 	 color: lightblue;
-	 font-size: 0.75em;
+	 font-size: 24px;
 	 font-weight: 300;
 	 text-align: center;
-	 padding-top: 0.5em;
-	 padding-bottom: 0.7em;
 	 letter-spacing: 1.5px;
-	 text-transform: uppercase;
 }
  .wrapper .profile .description {
 	 color: #080911;
@@ -927,17 +955,20 @@ background: #707070;
 	 margin-left:25%;
 	 margin-right:25%;
    margin-bottom: 0px;
-
+   margin-top: -50px;
+}
+.Arrow2{
+  margin-left: 50px;
 }
 .quote{
-	text-align: center;
-	font-size:100px;
-	color: #28bbdc;
+  margin-top: -110px;
+  text-align: center;
+  font-size: 120px;
+  color: #4ab7ec;
+  font-weight: bold;
 }
 #testimonials .center img{
-  margin-top: 3%;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  margin-top: -2%;
 }
 .carousel-item.active {
     display: flex !important;
@@ -964,7 +995,7 @@ background: #707070;
  #subscribe {
    width: 100%;
 	 padding: 3%;
-	 height: 560px;
+	 height: 610px;
 	 overflow: hidden;
 }
  .information-column {
@@ -988,12 +1019,12 @@ background: #707070;
 	 width: 60%;
 	 height: 100%;
 	 padding: 15px;
+   padding-top: 50px;
 	 float: right;
 background-color: #F7F7F7;
 }
 .form-column h2{
   color: #01add3;
-  padding-bottom: 20px;
 }
 .form-column p{
   color: grey;
@@ -1044,8 +1075,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
  .subscribe-btn {
 	 float: left;
-	 margin-right: 4%;
-	 margin: 15px;
+	 margin-top: 15px;
 	 padding: 10px;
 	 text-align: center;
 	 color: #ffffff;
@@ -1064,6 +1094,18 @@ input[type=number]::-webkit-outer-spin-button {
  .subscribe-btn i {
 	 margin-left: 8px;
 }
+.inputs{
+  display: flex;
+}
+.info-input{
+  margin-right: 10px;
+  width: 41% !important;
+}
+@media (min-width: 1300px) {
+  #subscribe{
+    height:560px;
+  }
+}
 
 /*--------------------------------------------------------------
 # giftcard
@@ -1076,7 +1118,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 100%;
 }
 .padding-gift{
-  padding-top: 100px;
+  padding-top: 25px;
 }
 .gift-title{
   font-size: 30px;
@@ -1085,7 +1127,6 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 50%;
   margin-left: 0%;
   margin-top: -70px;
-  margin-bottom: 50px;
 }
 .background-gift .col-md-8 .card-body p{
 color: grey;
@@ -1332,7 +1373,6 @@ width: 100%;
 .title {
 
     margin-bottom: 50px;
-    text-transform: uppercase;
 }
 .photos-events-title{
   padding-top: 10%;
@@ -1417,18 +1457,54 @@ justify-content: center;
 --------------------------------------------------------------*/
 #whySpeeddate-image{
   background-image: url('../../images/iStock-488088898.jpg');
-  height: 450px;
+  height: 550px;
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
   text-align: center;
 }
 #whySpeeddate-image h2 {
+  font-style: italic;
 padding-left: 10%;
 width: 90%
 }
-#speeddate{
+#speeddate , #expectations{
   border-bottom: 2px dotted lightgrey;
+}
+#speeddate h3 , #expectations h3 , #succesvol h3{
+  padding-bottom: 5%;
+}
+.heart-img{
+  height: 275px;
+  padding:10%;
+}
+.linkFAQ{
+  color: blue;
+}
+.linkFAQ:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.Count, .percentage {
+  font-size: 70px;
+}
+.Count{
+  color: #a3eeff;
+}
+.percentage{
+  color: #d0d0d0;
+}
+.hearts-percentage{
+  left: 25%;
+  position: absolute;
+  top: 25%;
+}
+.btn-link{
+  text-align: left;
+  width: 100%;
+}
+.fa-plus, .fa-minus{
+  float: right;
 }
 
 @media  (max-width: 576px) {

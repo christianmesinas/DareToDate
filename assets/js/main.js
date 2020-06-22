@@ -110,6 +110,32 @@
 
   });
 
+  //on click accordion icons
+  $( ".btn-link" ).click(function() {
+    $(this).find("i").toggleClass("fa-minus fa-plus");
+});
+
+//FAQ percentage increase
+$('.Count').each(function () {
+  var $this = $(this);
+  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+    duration: 2500,
+    easing: 'swing',
+    step: function () {
+      $this.text(Math.ceil(this.Counter));
+    }
+  });
+});
+
+// image hearts change after time
+var images = ["./images/Tekengebied 1 kopie.png"]
+var current = 0;
+setInterval(function(){
+
+  $('#flip').attr('src', images[current]);
+  current = (current < images.length - 1)? current + 1: 0;
+
+},2450);
   // if dropdown is selected add inputs for coupon
   //$("#genderDropdown li a").each(function(){
   //    var kortingInput = $(this).html();
