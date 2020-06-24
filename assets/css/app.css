@@ -1517,6 +1517,7 @@ width: 90%
   margin-bottom: 20px !important;
   background-color: white !important;
 }
+
 .waaromSpeeddateStyling-card{
   background-color: white !important;
 }
@@ -1598,13 +1599,27 @@ width: 90%
   color: white;
   background: linear-gradient(to bottom, #01add3 5%, #6dd5ed 100%);
   margin-bottom:10%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #exampleFormControlTextarea1{
   font-size: 20px;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  border: 1px solid #bfe1eb;
 }
 #FAQ-question .form-group{
   font-size: 20px;
 }
+
+#FAQ-question .form-group input{
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  padding-left: 5%;
+  width: 100%;
+  border: 1px solid #bfe1eb;
+ }
+
 @media  (min-width: 768px) {
   #FAQ-question {
     height:600px;
