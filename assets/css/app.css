@@ -419,7 +419,7 @@ text-transform: capitalize;
 
 .image-text-header {
   margin: 0 0 10px 0;
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 10;
   line-height: 56px;
   color: #fff;
@@ -1470,19 +1470,31 @@ justify-content: center;
   text-align: center;
 }
 #whySpeeddate-image h2 {
+  display: none;
   font-style: italic;
 padding-left: 10%;
 width: 90%
 }
-#speeddate , #expectations{
-  border-bottom: 2px dotted lightgrey;
-}
+
 #speeddate h3 , #expectations h3 , #succesvol h3{
   padding-bottom: 5%;
 }
+#expectations .container h3 span{
+  display: block;
+}
 .heart-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 275px;
-  padding:10%;
+}
+.border-hearts , .waaromSpeeddateTestimonials{
+  border: 5px solid #cae6ef;
+  border-radius: 10px;
+}
+.waaromSpeeddateTestimonials{
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .linkEvents{
   color: blue;
@@ -1493,15 +1505,15 @@ width: 90%
 }
 .Count, .percentage {
   font-size: 70px;
+  color: white;
 }
-.Count{
-  color: #a3eeff;
-}
-.percentage{
-  color: #d0d0d0;
+.title-match{
+  font-size: 50px;
+  color: #01add3;
+  padding-bottom: 15px;
 }
 .hearts-percentage{
-  left: 30%;
+  left: 42%;
   position: absolute;
   top: 25%;
 }
@@ -1529,6 +1541,7 @@ width: 90%
   font-size: large;
   color: lightblue;
 }
+
 .community{
   background: linear-gradient(to bottom, #01add3 5%, #6dd5ed 100%);
 }
@@ -1544,38 +1557,29 @@ width: 90%
   width: 100%;
 }
 .btn-styling-community{
+  margin-top: 5px !important;
   float: none !important;
-  background-color: #343a40;
-  color: #f8f9fa;
+  background-color: #ffffff;
+  color: #6bd4ed;
   border-color: none;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
-@media (min-width: 375px){
-  .hearts-percentage{
-    left: 25%;
-  }
-}
-@media (min-width: 375px){
-  .hearts-percentage{
-    left: 20%;
-  }
-}
-@media (min-width: 768px){
-  .hearts-percentage{
-    left: 30%;
-  }
-  .heart-img{
-    padding: 5%;
-  }
-}
-@media  (max-width: 576px) {
+
+@media  (min-width: 576px) {
   #whySpeeddate-image h2 {
-    display: none;
+    display: block;
   }
 }
+
+@media (min-width: 990px){
+  .border-hearts{
+    margin-bottom: 35%;
+  }
+}
+
 /*--------------------------------------------------------------
 # FAQ page
 --------------------------------------------------------------*/
